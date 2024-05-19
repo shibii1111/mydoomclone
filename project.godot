@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="MyDoomClone"
-run/main_scene="res://world.tscn"
+run/main_scene="res://Levels/world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://Audio/default_bus_layout.tres"
 
 [display]
 
@@ -67,3 +71,8 @@ shoot={
 
 3d_physics/layer_1="environment"
 3d_physics/layer_2="characters"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=2
+textures/default_filters/use_nearest_mipmap_filter=true
